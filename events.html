@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Events</title>
+	<style>
+		.fix
+		{
+			width:300px;
+			height:200px;
+			background-color:pink;
+			float:left;
+			margin-right:10px;
+			border: 3px solid purple;
+
+		}
+		#first-box
+		{
+			margin-left:150px;
+
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p style="text-align:center">
+			<strong>This is an example that shows three types of events occuring on three different boxes</strong>
+		</p>
+			<div id="first-box" class="fix"> 
+				<h1 onclick="this.innerHTML = 'This is the new text !' ">This is a heading tag used to display onclick event.</h1>
+			</div>
+			<div id="second-box" class="fix">
+				<br>
+				<br>
+				<br>
+				<p style="margin-left:30px">Enter any text: <input type="text" id="box" onchange="newFunction()">
+				</p>
+			</div>
+			<div id="third-box" class="fix">
+				<p >This is the test area.</p>
+				<input type="text" onkeypress="myFunction()" style="margin-left : 50px"/>
+			</div>
+	<script>
+		function myFunction()
+		{
+			alert("You pressed a key!");
+		}
+		function newFunction() 
+		{
+			 var n = document.getElementById("box");
+			 n.value = n.value.toUpperCase();
+		}
+		
+	</script>
+</div>
+</body>
+</html>

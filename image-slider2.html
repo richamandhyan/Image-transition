@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Image-slider</title>
+	<style>
+	#slider-wrapper{
+			width:950px;
+			height:470px;
+			margin:50px auto;
+			position:relative;
+			margin-bottom:0px;
+			overflow:hidden;
+	}
+	#s1{
+					padding: 6px;
+					background: #FFFFFF;
+					position: absolute;
+					left: 50%;
+					bottom: 25px;
+					border-radius: 20px;
+					opacity: 0.3;
+					cursor: pointer;
+					z-index: 999;
+					margin-left: -36px;
+				}
+
+				#s2{
+					padding: 6px;
+					background: #FFFFFF;
+					position: absolute;
+					left: 50%;
+					bottom: 25px;
+					border-radius: 20px;
+					opacity: 0.3;
+					cursor: pointer;
+					z-index: 999;
+					margin-left: -12px;		
+				}
+				
+				#s3{
+					padding: 6px;
+					background: #FFFFFF;
+					position: absolute;
+					left: 50%;
+					bottom: 25px;
+					border-radius: 20px;
+					opacity: 0.3;
+					cursor: pointer;
+					z-index: 999;
+					margin-left: 12px;
+				}
+					
+				#s4{
+					padding: 6px;
+					background: #FFFFFF;
+					position: absolute;
+					left: 50%;
+					bottom: 25px;
+					border-radius: 20px;
+					opacity: 0.3;
+					cursor: pointer;
+					z-index: 999;
+					margin-left: 36px;
+					
+				}
+				#s5{
+					padding: 6px;
+					background: #FFFFFF;
+					position: absolute;
+					left: 50%;
+					bottom: 25px;
+					border-radius: 20px;
+					opacity: 0.3;
+					cursor: pointer;
+					z-index: 999;
+					margin-left: 60px;
+					}
+			#s1:hover, #s2:hover, #s3:hover, #s4:hover, #s5.hover{ opacity: 1;}
+				
+			#inner-wrapper{
+				width: 950px;
+				height: 470px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				margin-bottom: 0px;
+				overflow: hidden;
+				}
+
+				
+				.control{ display: none;}
+				
+				#slide1:checked ~ .overflow-wrapper{ margin-left: 0%; }
+				#slide2:checked ~ .overflow-wrapper{ margin-left: -100%; }
+				#slide3:checked ~ .overflow-wrapper{ margin-left: -200%; }
+				#slide4:checked ~ .overflow-wrapper{ margin-left: -300%; }
+				#slide5:checked ~ .overflow-wrapper{ margin-left: -400%; }
+				
+				#slide1:checked + #s1 { opacity: 1; }
+				#slide2:checked + #s2 { opacity: 1; }
+				#slide3:checked + #s3 { opacity: 1; }
+				#slide4:checked + #s4 { opacity: 1; }
+				#slide5:checked + #s5 { opacity: 1; }
+
+
+			.overflow-wrapper{
+				width: 4750px;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				overflow-y: hidden;
+				z-index: 1;
+				-webkit-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-o-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+			}
+
+				.slide img{
+					width: 950px;
+					float: left;
+				}
+				
+	</style>
+</head>
+<body>
+	<div id="slider-wrapper">
+		<div id="inner-wrapper">
+			<input type = "radio" name="slide" class="control" id="slide1">
+				<label for="slide1" id="s1"></label>
+			<input type = "radio" name="slide" class="control" id="slide2">
+				<label for="slide2" id="s2"></label>
+			<input type = "radio" name="slide" class="control" id="slide3">
+				<label for="slide3" id="s3"></label>
+			<input type = "radio" name="slide" class="control" id="slide4">
+				<label for="slide4" id="s4"></label>
+			<input type = "radio" name="slide" class="control" id="slide5">
+				<label for="slide5" id="s5"></label>
+			<div class="overflow-wrapper">
+				<a class="slide" href=""><img src="http://www.hurwitzjamesco.com/wp-content/uploads/2015/02/beauty_of_venice-wide.jpg"></a>
+				<a class="slide" href=""><img src="http://www.rocsgrp.com/assets/galleries/5683/original/Venice2.jpg">
+				</a>
+				<a class="slide" href=""><img src="http://adriatic-lines.com/wp-content/uploads/2015/04/canal-of-Venice.jpg"></a>
+				<a class="slide" href=""><img src="http://www.weather-forecast.com/system/images/6506/original/Venice.jpg?1325330211"></a>
+				<a class="slide" href=""><img src="http://adriatic-lines.com/wp-content/uploads/2015/04/canal-of-Venice.jpg" alt="canal-venice"></a>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

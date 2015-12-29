@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+
+	//var n=prompt("Enter an object")
+	var obj = { name:"Richard" , age:"40" ,clothing:"Casual" , sex: "Male" };
+
+	for(var x in obj){
+    	console.log(x + ': ' + obj[x]);
+	}
+		//console.log(obj.hasOwnPropertykeys(obj).length);
+		//var arr = ['a', 'b', 'c'];
+		//console.log(Object.keys(arr));
+	var count = 0;
+	for (k in obj) if (obj.hasOwnProperty(k)) count++;
+		console.log(count);
+	</script>
+</body>
+</html>

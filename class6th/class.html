@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+
+			// function getCharCount (str) {
+			// if(typeof str !== "string") { 
+			// return null;
+			// }
+			// var result = {};
+
+			// for (var i = 0; i < str.length; i++) {
+			// var tKey = str[i];
+			// if (tKey == " ") {
+			// // console.log("Near continue");
+			// continue;
+			// }
+			// if (result[tKey] == null) {
+			// 	debugger;
+			// result[tKey] = 1;
+			// // console.log("Near first if");
+			// } else {
+			// result[tKey]++ ;
+			// // console.log("In else");
+			// }
+			// }
+			// return result;
+			// }
+			// var name = "hello";
+			// var value = getCharCount(name);
+			// console.log(value);
+
+
+
+			
+// 	var str = prompt("Enter a string");
+
+	function acceptString (str) {
+		if(typeof str !== "string")	{
+			return null;
+			}
+		var result = {};
+		
+		for (var i = 0; i < str.length; i++) {
+		 var tKey = str[i];	
+		 if(tKey == " ") {
+		 continue;
+		}
+		if(result[tKey] == null) {
+			//debugger;
+			result[tKey] = 1;
+			} else {
+				result[tKey]++;
+
+			}
+			}
+	 		return result;
+	 		}
+	 	var name = "Hello";
+	 	console.log(acceptString(name));
+
+</script>
+
+</body>
+</html>

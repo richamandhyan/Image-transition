@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+
+	<script>
+		//var str = prompt("Enter a string");
+
+		function getCharCount (str) {
+			if(typeof str !== "string") {
+				return null;
+			}
+			var result = {};
+
+			for(var i=0; i < str.length; i++)
+			{
+				//debugger;
+
+				var tKey = str[i];
+		 		if(tKey == " ")
+		 		{
+		 			continue;
+		 		}					
+				if (result[tKey] == null) 
+				{ 
+					result[tKey] = 1;
+				} else {
+
+					result [tKey]++ ;
+				}
+				
+			}
+			return result;
+			
+		}
+		var name = "this is text";
+		var value =  getCharCount(name);
+		console.log(value);
+
+	</script>
+
+</body>
+</html>
+

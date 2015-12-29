@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Event Listener</title>
+</head>
+<body>
+
+	<button id="btn">Click Me!</button>
+
+	<script>
+	document.getElementById("btn").addEventListener("mouseover", myFunc);
+	document.getElementById("btn").addEventListener("click",myFunction);
+	document.getElementById("btn").removeEventListener("mouseover",myFunc);
+
+
+	
+	function myFunc(){
+		alert("You hovered on me!");
+	}
+
+	function myFunction(){
+		alert("You clicked me!");
+	}
+
+
+
+
+	</script>
+
+</body>
+</html>

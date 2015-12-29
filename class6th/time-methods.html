@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Date methods</title>
+</head>
+<body>
+	<script>
+		var d = new Date();
+		document.write("Time in milliseconds" + " " + d.getTime());
+		document.write("<br>");
+		document.write("Current year" + " "+ d.getFullYear());
+		document.write("<br>");
+		document.write("Current Day" +" " + d.getDay());
+		document.write("<br>");
+		document.write("Current Hours" + " " + d.getHours());
+		document.write("<br>");
+		document.write("Current Month" +" " + d.getMonth());
+		document.write("<br>");
+		d.setDate(20);
+		document.write("New set Date" + " " + d);
+		document.write("<br>");
+		d.setFullYear(2020,0,14);
+		document.write("New set year" + " " + d);
+		document.write("<br>");
+		d.setSeconds(50);
+		document.write("New set seconds" + " " + d);
+		document.write("<br>");
+		d.setMinutes(20);
+		document.write("New set minutes" + " " + d);
+		document.write("<br>");
+		d.setHours(13);
+		document.write("New set hours" + " " + d);
+		
+	</script>
+
+</body>
+</html>

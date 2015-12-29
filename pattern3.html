@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>pattern-3</title>
+</head>
+<body>
+	<script>
+	var n = prompt("Enter a value");
+	var r,colNew,col;
+
+	for( r = 0 ; r <= n ; r++)
+		{
+			for (col = n-r ; col >=1  ; col--){
+			document.write("&nbsp;");
+		}
+	
+	var print=1;
+	var mul=r;
+	var div=1;
+
+	for( colNew= 0 ; colNew <= r ; colNew++)
+		{
+			document.write(print);
+			print = print * mul;
+			print = print/div;
+			mul--;
+			div++;
+			//document.write("\n");
+		}
+		
+	document.write("<br>");
+		
+}
+
+	</script>
+
+</body>
+</html>

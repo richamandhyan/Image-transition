@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Tree-view plugin</title>
+	<link rel="stylesheet" type="text/css" href="tree.css"/>
+</head>
+<body>
+	<div id="tree1"></div>
+	<script src="jquery-1.11.3.min.js"></script>
+	<script src="tree.jquery.js"></script>
+	<script>
+			$(document).ready(function(){
+					var data = [
+				    {
+				        label: 'Parent Node 1', id: 1,
+				        children: [
+				            { label: 'Child 1', id: 2 },
+				            { label: 'Child 2', id: 3 }
+				        ]
+				    },
+				    {
+				        label: 'Parent Node 2', id: 4,
+				        children: [
+				            { label: 'Child 3', id: 5 }
+				        ]
+				    }
+				];
+					$(function(){
+					$('#tree1').tree({
+					    data: data,
+					    autoOpen: true,
+					    dragAndDrop: true
+					});
+					});
+		});
+</script>
+</body>
+</html>
